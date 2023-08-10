@@ -1,0 +1,986 @@
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+
+const express = require("express");
+const file_upload = require("../../../module/file_upload");
+const router = express.Router();
+const knex = require("../../../module/knex_connect");
+const fs = require("fs");
+var moment = require("moment");
+const { sentMailTo } = require("../../../module/mail");
+const sentSms = require("../../../module/sent_sms");
+
+router.post("/get_room_values", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else {
+      var isStudentidExists = await knex("student_details")
+        .where({
+          id: req.body.student_id,
+        })
+        .limit(1);
+
+      if (isStudentidExists.length == 0) {
+        return res.json({
+          status: 401,
+          message: "Student id is not exists",
+        });
+      }
+
+      req.body.parking = isStudentidExists[0].parking;
+      req.body.room_type = isStudentidExists[0].room_type;
+      req.body.occupancy = isStudentidExists[0].occupancy;
+      req.body.toilet_type = isStudentidExists[0].toilet_type;
+
+      var get_rooms = await knex("room")
+        .select(
+          "occupancy",
+          "room_type",
+          "building_name",
+          "room_number",
+          "floor",
+          "toilet_type",
+          "vaccancy"
+        )
+        .where({
+          room_type: req.body.room_type,
+          occupancy: req.body.occupancy,
+          toilet_type: req.body.toilet_type,
+          status: 1,
+        })
+        // .andWhere(function () {
+        //   this.where("vaccancy", ">", 0);
+        // })
+        .whereNot('vaccancy', '=', knex.ref('total_occupancy'))
+        .orderBy("room_number", "asc");
+
+      if (get_rooms.length > 0) {
+        return res.json({
+          status: 200,
+          rooms_data: get_rooms,
+          message: "Room list fetched",
+        });
+      } else {
+        return res.json({
+          status: 401,
+          message: "No vaccant rooms found",
+        });
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/get_edit_values", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.edit_type == undefined || req.body.edit_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please select what you want to update Room or Meal",
+      });
+    } else {
+      var check_user = await knex("student_plan").where({
+        student_id: req.body.student_id,
+        status: 1,
+      });
+      if (check_user.length == 0) {
+        return res.json({
+          status: 401,
+          message: "No plan found for this student",
+        });
+      } else {
+        if (req.body.edit_type == "room") {
+          var get_rooms = await knex("room")
+            .select(
+              "occupancy",
+              "room_type",
+              "building_name",
+              "room_number",
+              "floor",
+              "toilet_type",
+              "vaccancy"
+            )
+            .where({
+              status: 1,
+            })
+            .whereNot('vaccancy', '=', knex.ref('total_occupancy'))
+            .orderBy("room_number", "asc");
+
+          if (get_rooms.length > 0) {
+            return res.json({
+              status: 200,
+              rooms_data: get_rooms,
+              message: "Room list fetched",
+            });
+          } else {
+            return res.json({
+              status: 401,
+              message: "No vaccant rooms found",
+            });
+          }
+        } else if (req.body.edit_type == "meal") {
+          // var get_meals = await knex("packages_price")
+          //   .select("*")
+          //   .whereIn("package ", ["Veg", "Eggeterian", "Non-Veg"])
+          //   .andWhere(function () {
+          //     this.where("package", "!=", check_user[0].meal_type);
+          //   })
+          //   .where({ term: check_user[0].term });
+
+          var get_meals = await knex("packages_price")
+            .select("*")
+            .where("package", "!=", check_user[0].meal_type)
+            .where({ term: check_user[0].term });
+          return res.json({
+            status: 200,
+            meal_data: get_meals,
+            student_plan: check_user,
+            message: "Meal list fetched",
+          });
+        } else if (
+          req.body.term_id != undefined &&
+          req.body.edit_type == "term"
+        ) {
+          // var get_meals = await knex("packages_price")
+          //   .select("*")
+          //   .whereIn("package ", ["Veg", "Eggeterian", "Non-Veg"])
+          //   .andWhere(function () {
+          //     this.where("package", "!=", check_user[0].meal_type);
+          //   })
+          //   .where({ term: check_user[0].term });
+
+          var get_meals = await knex("packages_price")
+            .select("*")
+            .where("package", "!=", check_user[0].meal_type)
+            .where({ term: req.body.term_id });
+          return res.json({
+            status: 200,
+            meal_data: get_meals,
+            student_plan: check_user,
+            message: "Meal list fetched",
+          });
+        }
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+router.post("/edit_room", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.room_no == undefined || req.body.room_no == "") {
+      return res.json({
+        status: 401,
+        message: "Please select Room",
+      });
+    } else {
+      var student_plan = await knex("student_plan").where({
+        student_id: req.body.student_id,
+        status: 1,
+      });
+      if (student_plan.length == 0) {
+        return res.json({
+          status: 401,
+          message: "No plan found for this student",
+        });
+      } else {
+        var data_table =
+          student_plan[0].student_type == "new"
+            ? "plan_new_student"
+            : "plan_old_student";
+        let room_no = `%,${req.body.room_no},%`;
+
+        const get_bed_type = await knex(`${data_table}`)
+          .select(`bed_type`, knex.raw(`CONCAT(',',room_nos,',') as rooms`))
+          .havingRaw(`rooms LIKE '${room_no}' `);
+
+        return res.json({
+          status: 200,
+          bed_type: get_bed_type,
+        });
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/edit_bed_type", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.room_no == undefined || req.body.room_no == "") {
+      return res.json({
+        status: 401,
+        message: "Please select Room",
+      });
+    } else if (req.body.bed_type == undefined || req.body.bed_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please select Bed Type",
+      });
+    } else {
+      var student_plan = await knex("student_plan").where({
+        student_id: req.body.student_id,
+        status: 1,
+      });
+      if (student_plan.length == 0) {
+        return res.json({
+          status: 401,
+          message: "No plan found for this student",
+        });
+      } else {
+        var data_table =
+          student_plan[0].student_type == "new"
+            ? "plan_new_student"
+            : "plan_old_student";
+        let room_no = `%,${req.body.room_no},%`;
+
+        const get_plans = await knex(`${data_table}`)
+          .select(`*`, knex.raw(`CONCAT(',',room_nos,',') as rooms`))
+          .havingRaw(`rooms LIKE '${room_no}' `)
+          .where({
+            bed_type: req.body.bed_type == "Upper Birth" ? "ub" : "lb",
+          });
+        if (get_plans.length > 0) {
+          return res.json({
+            status: 200,
+            plan_details: get_plans,
+            student_plan: student_plan,
+          });
+        } else {
+          return res.json({
+            status: 401,
+            message: "No plan found for this room",
+          });
+        }
+
+        //   if (req.body.edit_type == "room") {
+        //     var get_rooms = await knex("room").select('occupancy','room_type','building_name','room_number','floor','toilet_type','vaccancy')
+        //       .where({
+        //         status: 1,
+        //       })
+        //       .andWhere(function () {
+        //         this.where("vaccancy", ">", 0);
+        //       })
+        //       .orderBy('room_number', 'desc')
+
+        //     if (get_rooms.length > 0) {
+        //       return res.json({
+        //         status: 200,
+        //         rooms_data: get_rooms,
+        //         message: "Room list fetched",
+        //       });
+        //     } else {
+        //       return res.json({
+        //         status: 401,
+        //         message: "No vaccant rooms found",
+        //       });
+        //     }
+        //   }
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/edit_meal_plan", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.meal_type == undefined || req.body.meal_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please select meal type ",
+      });
+    } else if (req.body.plan_type == undefined || req.body.plan_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter plan type ",
+      });
+    } else if (req.body.to_pay == undefined) {
+      return res.json({
+        status: 401,
+        message: "Please enter amount to pay ",
+      });
+    } else {
+      var check_user = await knex("student_plan").where({
+        student_id: req.body.student_id,
+        paid: null,
+      });
+      if (check_user.length > 0) {
+        return res.json({
+          status: 401,
+          message: "Student hasn't paid for the previous plan yet ",
+        });
+      } else {
+        //  return
+        var update_plan = await knex("student_plan").insert([
+          {
+            student_id: req.body.student_id,
+            plan_type: req.body.plan_type,
+            to_pay: req.body.to_pay,
+            meal_type: req.body.meal_type,
+            created_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+            status: 1,
+            paid: req.body.to_pay > 0 ? null : "Yes",
+          },
+        ]);
+        if (update_plan.length > 0) {
+          let get_student_details = await knex("student_details").where({
+            id: req.body.student_id,
+          });
+          let update_student = await knex("student_details")
+            .where({ id: req.body.student_id })
+            .update({
+              food_preference: req.body.meal_type,
+              updated_at: moment()
+                .utcOffset("+05:30")
+                .format("YYYY-MM-DD HH:mm:ss"),
+            });
+
+          if (get_student_details.length > 0) {
+            sentMailTo(
+              get_student_details[0].StudEmail,
+              "New Meal Plan Set",
+              "Dear Ms. " +
+                get_student_details[0].SFname +
+                " Greetings!\n\n" +
+                "This is to inform you that a new meal plan has been set for you.\n\n " +
+                "Thanking you.\n\n" +
+                "With Regards,\n" +
+                "RM Hostel Team"
+            );
+
+            sentSms({
+              phone_number: get_student_details[0].SmobNo,
+              msg:
+                "Dear Ms. " +
+                get_student_details[0].SFname +
+                ",, This is to inform you that a new meal plan has been set for you.",
+            });
+            return res.json({
+              status: 200,
+              message: "Meal Plan updated succesfully for the student",
+            });
+          }
+        } else {
+          return res.json({
+            status: 401,
+            message: "Failed to update meal plan",
+          });
+        }
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/edit_room_plan", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.bed_type == undefined || req.body.bed_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please select bed type ",
+      });
+    } else if (req.body.room_no == undefined || req.body.room_no == "") {
+      return res.json({
+        status: 401,
+        message: "Please select room ",
+      });
+    } else if (req.body.plan_type == undefined || req.body.plan_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter plan type ",
+      });
+    } else if (req.body.to_pay == undefined) {
+      return res.json({
+        status: 401,
+        message: "Please enter amount to pay ",
+      });
+    } else {
+      var check_user = await knex("student_plan").where({
+        student_id: req.body.student_id,
+        paid: null,
+      });
+      if (check_user.length > 0) {
+        return res.json({
+          status: 401,
+          message: "Student hasn't paid for the previous plan yet ",
+        });
+      } else {
+        let get_room_details = await knex("room").where({
+          room_number: req.body.room_no,
+        });
+
+        var get_room_bearths = await knex("student_details")
+          .select("id", "room_id", "bed_type")
+          .where({
+            room_id: req.body.room_no,
+            bed_type: req.body.bed_type == "Lower Berth" ? "lb" : "ub",
+            status: 1,
+            is_approved: 1,
+          });
+        var get_student_old_room = await knex("student_details")
+          .select("id", "room_id", "bed_type")
+          .where({
+            id: req.body.student_id,
+            status: 1,
+            is_approved: 1,
+          });
+
+        var get_old_room_details = await knex("room").where({
+          room_number: get_student_old_room[0].room_id,
+        });
+
+        if (get_room_details[0].total_occupancy == 2) {
+          if (get_room_bearths.length == 1) {
+            return res.json({
+              status: 401,
+              message: `${req.body.bed_type} is not available for Room Number ${req.body.room_no}`,
+            });
+          }
+        }
+        if (get_room_details[0].total_occupancy == 3) {
+          if (get_room_bearths.length == 3) {
+            return res.json({
+              status: 401,
+              message: `${req.body.bed_type} is not available for Room Number ${req.body.room_no}`,
+            });
+          }
+        }
+        if (get_room_details[0].total_occupancy == 4) {
+          if (get_room_bearths.length == 2) {
+            return res.json({
+              status: 401,
+              message: `${req.body.bed_type} is not available for Room Number ${req.body.room_no}`,
+            });
+          }
+        }
+        if (get_room_details[0].total_occupancy == 5) {
+          if (get_room_bearths.length == 5) {
+            return res.json({
+              status: 401,
+              message: `${req.body.bed_type} is not available for Room Number ${req.body.room_no}`,
+            });
+          }
+        }
+        if (get_room_details[0].total_occupancy == 6) {
+          if (get_room_bearths.length == 3) {
+            return res.json({
+              status: 401,
+              message: `${req.body.bed_type} is not available for Room Number ${req.body.room_no}`,
+            });
+          }
+        }
+        if (get_room_details[0].total_occupancy == 7) {
+          if (get_room_bearths.length == 7) {
+            return res.json({
+              status: 401,
+              message: `${req.body.bed_type} is not available for Room Number ${req.body.room_no}`,
+            });
+          }
+        }
+
+        let leave_room = await knex("room_occupancy")
+          .where({
+            student_id: req.body.student_id,
+            status: 1,
+          })
+          .update({
+            status: 2,
+            updated_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+          });
+
+        var get_room_data = await knex("room_occupancy").where({
+          room_number: get_student_old_room[0].room_id,
+          status: 1,
+        });
+        var update_room = await knex("room")
+          .where({ room_number: get_student_old_room[0].room_id })
+          .update({
+            vaccancy:
+              get_old_room_details[0].total_occupancy - get_room_data.length,
+            updated_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+          });
+        let update_student_room = await knex("student_details")
+          .where({ id: req.body.student_id })
+          .update({
+            bed_type: req.body.bed_type == "Lower Berth" ? "lb" : "ub",
+            room_id: req.body.room_no,
+            building_name: get_room_details[0].building_name,
+            toilet_type: get_room_details[0].toilet_type,
+            occupancy: get_room_details[0].occupancy,
+            room_type: get_room_details[0].room_type,
+            updated_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+          });
+        await knex("room_occupancy").insert([
+          {
+            room_number: req.body.room_no,
+            student_id: req.body.student_id,
+            status: 1,
+            created_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+          },
+        ]);
+        var get_new_room_data = await knex("room_occupancy").where({
+          room_number: req.body.room_no,
+          student_id: req.body.student_id,
+          status: 1,
+        });
+
+        let get_new_room_details = await knex("room").where({
+          room_number: req.body.room_no,
+        });
+        var final_room_update = await knex("room")
+          .where({ room_number: req.body.room_no })
+          .update({
+            vaccancy:
+              get_new_room_details[0].vaccancy - get_new_room_data.length,
+          });
+
+        var update_plan = await knex("student_plan").insert([
+          {
+            student_id: req.body.student_id,
+            plan_type: req.body.plan_type,
+            to_pay: req.body.to_pay,
+            room_no: req.body.room_no,
+            bed_type: req.body.bed_type == "Lower Berth" ? "lb" : "ub",
+            created_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+            status: 1,
+            paid: req.body.to_pay > 0 ? null : "Yes",
+          },
+        ]);
+        if (update_plan.length > 0) {
+          let get_student_details = await knex("student_details").where({
+            id: req.body.student_id,
+          });
+
+          if (get_student_details.length > 0) {
+            sentMailTo(
+              get_student_details[0].StudEmail,
+              "New Room Allotted",
+              "Dear Ms. " +
+                get_student_details[0].SFname +
+                " Greetings!\n\n" +
+                `This is to inform you that a new room has been alloted to you. Room No: ${req.body.room_no} (${req.body.bed_type}).\n\n ` +
+                "Thanking you.\n\n" +
+                "With Regards,\n" +
+                "RM Hostel Team"
+            );
+
+            sentSms({
+              phone_number: get_student_details[0].SmobNo,
+              msg:
+                "Dear Ms. " +
+                get_student_details[0].SFname +
+                `,, This is to inform you that a new room has been alloted to you. Room No: ${req.body.room_no} (${req.body.bed_type}).`,
+            });
+            return res.json({
+              status: 200,
+              message: "Room updated succesfully for the student",
+            });
+          }
+        } else {
+          return res.json({
+            status: 401,
+            message: "Failed to update room",
+          });
+        }
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/edit_term", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.term == undefined || req.body.term == "") {
+      return res.json({
+        status: 401,
+        message: "Please select term",
+      });
+    } else if (req.body.meal == undefined || req.body.meal == "") {
+      return res.json({
+        status: 401,
+        message: "Please select meal",
+      });
+    } else {
+      var get_meal_term = await knex("packages_price")
+        .select("*")
+        .whereIn("package ", [req.body.meal])
+        .where({ term: req.body.term });
+
+      var get_laundry_term = await knex("packages_price")
+        .select("*")
+        .where({ term: req.body.term, package: "Laundary" });
+      let obj = {
+        meal_plan: get_meal_term,
+        laundry_plan: get_laundry_term,
+      };
+      return res.json({
+        status: 200,
+        result: obj,
+      });
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/edit_term_plan", async (req, res) => {
+  try {
+    if (req.body.student_id == undefined || req.body.student_id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else if (req.body.meal_type == undefined || req.body.meal_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please select meal type ",
+      });
+    } else if (req.body.plan_type == undefined || req.body.plan_type == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter plan type ",
+      });
+    } else if (req.body.to_pay == undefined || req.body.to_pay == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter amount to pay ",
+      });
+    } else if (req.body.meal_price == undefined || req.body.meal_price == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter meal price ",
+      });
+    } else if (
+      req.body.laundry_price == undefined ||
+      req.body.laundry_price == ""
+    ) {
+      return res.json({
+        status: 401,
+        message: "Please enter laundry price ",
+      });
+    } else if (req.body.term == undefined || req.body.term == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter term ",
+      });
+    } else {
+      var check_user = await knex("student_plan").where({
+        student_id: req.body.student_id,
+        paid: null,
+      });
+      if (check_user.length > 0) {
+        return res.json({
+          status: 401,
+          message: "Student hasn't paid for the previous plan yet ",
+        });
+      }
+      var check_user_term = await knex("student_details").where({
+        id: req.body.student_id,
+        term: req.body.term,
+      });
+
+      if (check_user_term.length > 0) {
+        return res.json({
+          status: 401,
+          message: "Student is already in this term",
+        });
+      } else {
+        //   return
+        var update_plan = await knex("student_plan").insert([
+          {
+            student_id: req.body.student_id,
+            plan_type: req.body.plan_type,
+            to_pay: req.body.to_pay,
+            total: req.body.to_pay,
+            meal_type: req.body.meal_type,
+            status: 1,
+            laundry: req.body.laundry_price,
+            meal: req.body.meal_price,
+            created_at: moment()
+              .utcOffset("+05:30")
+              .format("YYYY-MM-DD HH:mm:ss"),
+          },
+        ]);
+        if (update_plan.length > 0) {
+          let get_student_details = await knex("student_details").where({
+            id: req.body.student_id,
+          });
+          let update_student = await knex("student_details")
+            .where({ id: req.body.student_id })
+            .update({
+              food_preference: req.body.meal_type,
+              term: req.body.term,
+              updated_at: moment()
+                .utcOffset("+05:30")
+                .format("YYYY-MM-DD HH:mm:ss"),
+            });
+
+          if (get_student_details.length > 0) {
+            sentMailTo(
+              get_student_details[0].StudEmail,
+              "New Term Set",
+              "Dear Ms. " +
+                get_student_details[0].SFname +
+                " Greetings!\n\n" +
+                "This is to inform you that a new term plan has been set for you. Please log into the app and kindly pay for it.\n\n " +
+                "Thanking you.\n\n" +
+                "With Regards,\n" +
+                "RM Hostel Team"
+            );
+
+            sentSms({
+              phone_number: get_student_details[0].SmobNo,
+              msg:
+                "Dear Ms. " +
+                get_student_details[0].SFname +
+                ",, This is to inform you that a new term plan has been set for you. Please log into the app and kindly pay for it.",
+            });
+            return res.json({
+              status: 200,
+              message: "Term Plan updated succesfully for the student",
+            });
+          }
+        } else {
+          return res.json({
+            status: 401,
+            message: "Failed to update term",
+          });
+        }
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.post("/edit_monthly_plan", async (req, res) => {
+  try {
+    if (req.body.id == undefined || req.body.id == "") {
+      return res.json({
+        status: 401,
+        message: "Please enter student id",
+      });
+    } else {
+      const total_bill = (
+        Number(req.body.monthly_four_wheeler_parking_fee) +
+        Number(req.body.monthly_two_wheeler_parking_fee) +
+        Number(req.body.monthly_water_bill) +
+        Number(req.body.monthly_electricity_bill) +
+        Number(req.body.monthly_mess_fee) +
+        Number(req.body.monthly_laundry_fee) +
+        Number(req.body.monthly_room_rent) +
+        Number(req.body.monthly_admission_fee) +
+        Number(req.body.monthly_other_fees) +
+        Number(req.body.monthly_transportation_fee)
+      ).toFixed(2);
+console.log("monthly_four_wheeler_parking_fee", Number(req.body.monthly_four_wheeler_parking_fee))
+console.log("monthly_two_wheeler_parking_fee", Number(req.body.monthly_two_wheeler_parking_fee))
+console.log("monthly_water_bill", Number(req.body.monthly_water_bill))
+console.log("monthly_electricity_bill", Number(req.body.monthly_electricity_bill))
+console.log("monthly_mess_fee", Number(req.body.monthly_mess_fee))
+console.log("monthly_laundry_fee", Number(req.body.monthly_laundry_fee))
+console.log("monthly_room_rent", Number(req.body.monthly_room_rent))
+console.log("monthly_admission_fee", Number(req.body.monthly_admission_fee))
+console.log("monthly_other_fees", Number(req.body.monthly_other_fees))
+console.log("monthly_transportation_fee", Number(req.body.monthly_transportation_fee))
+
+
+
+      if (total_bill <= 0) {
+        return res.json({
+          status: 401,
+          message: "Please enter at least one value in these fields" + total_bill ,
+        });
+      }
+
+      const studentParams = {
+        monthly_transportation_fee: req.body.monthly_transportation_fee
+          ? req.body.monthly_transportation_fee
+          : 0,
+        monthly_four_wheeler_parking_fee: req.body
+          .monthly_four_wheeler_parking_fee
+          ? req.body.monthly_four_wheeler_parking_fee
+          : 0,
+        monthly_two_wheeler_parking_fee: req.body
+          .monthly_two_wheeler_parking_fee
+          ? req.body.monthly_two_wheeler_parking_fee
+          : 0,
+        monthly_water_bill: req.body.monthly_water_bill
+          ? req.body.monthly_water_bill
+          : 0,
+        monthly_electricity_bill: req.body.monthly_electricity_bill
+          ? req.body.monthly_electricity_bill
+          : 0,
+        monthly_mess_fee: req.body.monthly_mess_fee
+          ? req.body.monthly_mess_fee
+          : 0,
+        monthly_laundry_fee: req.body.monthly_laundry_fee
+          ? req.body.monthly_laundry_fee
+          : 0,
+        monthly_room_rent: req.body.monthly_room_rent
+          ? req.body.monthly_room_rent
+          : 0,
+        monthly_admission_fee: req.body.monthly_admission_fee
+          ? req.body.monthly_admission_fee
+          : 0,
+        monthly_other_fees: req.body.monthly_other_fees
+          ? req.body.monthly_other_fees
+          : 0,
+        monthly_other_fees_remark: req.body.monthly_other_fees_remark,
+        total: total_bill,
+        total_one_time: total_bill,
+        to_pay: total_bill,
+      };
+      var update_data = await knex("student_plan")
+        .where({ id: req.body.id })
+        .update(studentParams);
+
+      if (update_data) {
+        sentMailTo(
+          req.body.StudEmail,
+          "Successful Plan Set",
+          "Dear Ms. " +
+            req.body.SFname +
+            " Greetings!\n\n" +
+            "This is to inform you that a subscription plan has been updated for you.Please log into the app and kindly pay for it.\n\n " +
+            "Thanking you.\n\n" +
+            "With Regards,\n" +
+            "RM Hostel Team"
+        );
+
+        // sentSms({
+        //   phone_number: req.body.SmobNo,
+        //   msg:
+        //     "Dear Ms. " +
+        //     req.body.SFname +
+        //     ",, This is to inform you that a subscription plan has been updated for you.Please log into the app and kindly pay for it.",
+        // });
+        return res.json({
+          status: 200,
+          message: "Plan updated  successfully for the student",
+        });
+      } else {
+        return res.json({
+          status: 401,
+          message: "Failed to add plan",
+        });
+      }
+    }
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+
+router.get("/get_package", async (req, res) => {
+  try {
+    var get_plans = await knex("packages_price")
+      .select(["description", "package", "order_by"])
+      .where("description", "!=", "");
+    const plan_sort = get_plans.sort(
+      (a, b) => parseFloat(a.order_by) - parseFloat(b.order_by)
+    );
+    const groupedMap = plan_sort.filter(
+      (v, i, a) => a.findLastIndex((v2) => v2.order_by === v.order_by) === i
+    );
+    return res.json({
+      status: 200,
+      package_data: groupedMap,
+      message: "packages list fetched",
+    });
+  } catch (error) {
+    // console.log(ok);
+    return res.json({
+      status: 401,
+      message: error.message,
+    });
+  }
+});
+module.exports = router;
