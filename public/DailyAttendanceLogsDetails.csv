@@ -1,0 +1,436 @@
+Date, Employee Code ,Employee Name,Company ,Department,Category ,Degination,Grade,Team,Shift, In Time ,Out Time , Duration ,Late By ,Early By ,Status ,Punch Records ,Overtime
+10-04-2023,1,Test Employee1,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2,2,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2012,2012,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2201,Narasimhan,Rani Meyyammai Hostel,Admin. Staff,Default,Manager,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2202,Devi Thiagarajan,Rani Meyyammai Hostel,Admin. Staff,Default,Accountant,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2203,Jyothi priya,Rani Meyyammai Hostel,Admin. Staff,Default,Account,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2204,A.Arthi,Rani Meyyammai Hostel,Admin. Staff,Default,Acct. Asst.,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2205,KT.Sankari,Rani Meyyammai Hostel,Admin. Staff,Default,Warden,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2206,Deivanai,Rani Meyyammai Hostel,Admin. Staff,Default,Warden,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2207,Rajalakshmi .U,Rani Meyyammai Hostel,Admin. Staff,Default,Warden,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2208,Siriya Pushpam,Rani Meyyammai Hostel,Admin. Staff,Default,Warden,,,GS2,07:27,,15:03,01:57,00:00,Present  (No OutPunch),07:27:in(Att2) 22:30:out(SE) ,00:00
+10-04-2023,2209,T.Padmaraj,Rani Meyyammai Hostel,Admin. Staff,Default,Electrician,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2210,Chandrasekar,Rani Meyyammai Hostel,Admin. Staff,Default,Driver,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2211,B.saravanan,Rani Meyyammai Hostel,Admin. Staff,Default,Cook,,,GS2,05:34,,16:56,00:00,00:00,Present  (No OutPunch),05:34:in(Att2) 22:30:out(SE) ,00:00
+10-04-2023,2212,S.Raman,Rani Meyyammai Hostel,Admin. Staff,Default,Asst.,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2213,A.Rajkumar,Rani Meyyammai Hostel,Admin. Staff,Default,Asst.,,,GS2,06:35,,15:55,01:05,00:00,Present  (No OutPunch),06:35:in(Att2) 06:35:(Att2) 22:30:out(SE) ,00:00
+10-04-2023,2214,A.Lakshmanan,Rani Meyyammai Hostel,Admin. Staff,Default,Asst.,,,GS2,06:35,,15:55,01:05,00:00,Present  (No OutPunch),06:35:in(Att2) 22:30:out(SE) ,00:00
+10-04-2023,2215,Santhosh,Rani Meyyammai Hostel,Admin. Staff,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2216,Ramanada,Rani Meyyammai Hostel,Admin. Staff,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2219,Indrajith,Rani Meyyammai Hostel,Admin. Staff,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2220,Kham Bahadur,Rani Meyyammai Hostel,Contract,Default,Security,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2221,Jagguram,Rani Meyyammai Hostel,Contract,Default,Security,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2224,P.Parvathy,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2225,Sheela,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2226,Parameshwaran.V,Rani Meyyammai Hostel,Admin. Staff,Default,cook asst,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2230,Kalyani,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2233,Parvathy,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2234,Penchalaiah,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2236,Raghavan,Rani Meyyammai Hostel,Admin. Staff,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2239,Santhoshini,Rani Meyyammai Hostel,Contract,Default,House keeping supervisor,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2240,Haribabu,Rani Meyyammai Hostel,Contract,Default,plumber,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2241,Valli,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2242,Thenmozhi,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2243,Devi kala,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2244,Bhavani,Rani Meyyammai Hostel,Contract,Default,,,,GS,08:58,,11:32,00:00,00:00,Present  (No OutPunch),08:58:in(Att2) 20:30:out(SE) ,00:00
+10-04-2023,2247,Jothi,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,2248,2248,Default,Default,Default,,,,GS,08:58,,11:32,00:00,00:00,Present  (No OutPunch),08:58:in(Att2) 20:30:out(SE) ,00:00
+10-04-2023,2251,2251,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22001,S.Leelakumari,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22002,Aditi Majhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22003,G.Bavadharani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22004,S.Swetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22005,Aleena Maxin,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22006,V.Yamini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22007,Sanjunitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22008,Divya Janani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22009,Kuyil Mozhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22010,S.Padma Roopa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22011,Shrima Siddharth,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22012,BV.Bridheshna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22013,Ranvitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22015,K.Aishwarya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22016,GL.Tanushree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22017,Harishmitha Devi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22018,Neha Grace,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22019,Aysha Rafia,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22020,S.Sowmya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22021,U.Gurunischitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22022,S.Sindhu,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22023,SR.Dhanusri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22024,Harini Sathish,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22025,S.Sarmitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22026,Magizha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22027,S.Ishwarya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22028,Ranchana E,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22029,P.Yuvanthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22030,Kadambari,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22031,Srineka Thangaraj,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22032,Anisha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22033,O.S.Laksmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22034,G.Jayashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22035,KS.Sangamithirai,Rani Meyyammai Hostel,Student,Default,,,,GS,14:38,,05:52,05:38,00:00,Present  (No OutPunch),14:38:in(Att2) 20:30:out(SE) ,00:00
+10-04-2023,22036,R.Mithulasri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22037,Sarnitha Boopathi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22038,Varshini Sampath,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22039,Suveetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22040,Dana Najeeb,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22041,Fellah Fathima,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22042,Sanya Najmal,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22043,Gopika Rajesh,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22044,Sana Fathima,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22045,Ridha Fathima,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22046,Kareena Sarda,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22047,Adreena,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22048,J.Ramya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22049,Shrinidhi Sivakumar,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22050,K.Murugammai,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22051,H.Akkshada,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22052,S.Samyuktha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22053,VS.Kaviya Sri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22055,Krishna Roopa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22056,MP.Arthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22057,S.Ashmitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22058,Alya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22059,Naseera,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22060,Abirami Murugappan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22061,C.Prathiksha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22062,P.Diya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22063,Sivatharini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22064,Kathrine,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22065,Geogeena Merin,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22066,Aadhya Lakshmi Raja,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22067,KR.Ragavi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22068,Ritika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22069,Riya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22070,C.Vaishali,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22071,Shriya Krishna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22072,Aparna,Default,Student,Default,student,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22073,Simran,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22074,Harshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22075,Vijayashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22076,Nithyashri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22077,Chitrarasi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22078,Subhashini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22079,Servesha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22080,Sandhana,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22081,S.Meenakshi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22082,S.Shravani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22083,S.Subhiksha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22084,Sumedha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22085,Varshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22086,Kushi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22087,Surriaya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22088,M.Suvetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22089,S.Jayashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22090,Sneha Devi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22091,K.Aswini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22092,T.Swetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22093,V.Shrimitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22094,Anika Sandra,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22095,A.Roshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22096,RM.Srinidhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22097,G.Bhavana Jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22098,R.Thejeshwarya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22099,Gungun Jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22100,VT.Sathvika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22101,AB.Subarna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22102,A.Aishwarya Kauvery,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22103,M.Roja,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22104,R.Praveena,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22105,V.Jayavarshni,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22106,Jhanvi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22107,Sri Rekha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22108,Padmavathy Arulmozhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22110,Sanjana Jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22111,S.Muthamizhselvi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22112,Pragathi Jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22113,Muskan Jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22114,Trisha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22115,S.Deepthi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22116,A.Akshatha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22117,VG.Hareene,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22118,MP.Sashtihasini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22119,Greeshma Reddy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22120,Herlin Reeba,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22121,Jayashree Pal,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22122,M.Maanisha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22123,B.Harini,Rani Meyyammai Hostel,Student,Default,,,,GS,15:22,,05:08,06:22,00:00,Present  (No OutPunch),15:22:in(Att2) 20:30:out(SE) ,00:00
+10-04-2023,22124,Fathima Thashin,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22125,Avanthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22126,Hiranmayee,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22127,CS.Priya dharshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22128,Angala Parameswari,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22129,Vani Parvathy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22130,Janani Senthil,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22132,Noor Shireen,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22133,AV.Nakshathra,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22134,Reeta Devi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22135,R.Reetikaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22136,JT.Sowrati,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22137,.Kiruthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22138,S.Krishnapriya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22139,Aishwarya Karuppiah,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22140,Safika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22141,Chandralekha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22142,G.Shridevi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22143,S.Ritthikaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22144,S.Alaghamai,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22145,J.Shivaany,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22146,Roshina Albert,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22147,Mithuna,Rani Meyyammai Hostel,Student,Default,,,,GS,11:51,14:16,02:25,02:51,06:13, ½Present ,11:51:in(Att2) 14:16:out(Att2) ,00:00
+10-04-2023,22148,K.Shamrutha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22149,Boomika Jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22150,Kanishtha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22151,NS.Rujula,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22152,VD.Lavanya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22153,SR.Sejal Ritheha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22154,Sneka.G K,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22155,Kushi Babel,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22156,M.Nameera Fathima,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22157,S.Sweatha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22158,Suruthi Sree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22159,T.Yuvarani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22160,Raveena,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22161,D.Boomika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22162,Gouri Girish,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22164,BP.Kritika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22166,A.Akshaya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22167,Sruthi Arivazhagan,Rani Meyyammai Hostel,Contract,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22168,Kirthana Balaraman,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22169,Sakthi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22170,Priya Dharshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22171,Shanmathi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22172,SK.Anuvarshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22173,C.Saranya,Rani Meyyammai Hostel,Student,Default,,,,GS,14:21,,06:09,05:21,00:00,Present  (No OutPunch),14:21:in(Att2) 20:30:out(SE) ,00:00
+10-04-2023,22174,MS.Varsha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22175,E.Subashini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22176,Hephzibah,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22177,M.Swetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22178,D.Harini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22179,Anbumathi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22180,Raja Rajasri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22181,S.Nishitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22182,Sweatha varshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22183,Nagabala IIakia,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22184,Nivashini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22185,S.Anandhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22186,V.Jeyachitra,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22187,Nivedha Raj,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22188,Srinithi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22189,G.Sudhiksha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22190,KS.Sugapriyaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22191,P.Jaya Subarna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22192,R.Vaishnavi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22193,S.Suhasini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22194,S.Varsha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22195,G.Vedha Sanyuckta,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22196,TR.Bhavani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22197,U.Nandhini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22198,A.Srinidhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22199,S.Sarumathi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22200,SC.Sreenithi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22201,T.Sathvika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22202,I.HarshithaShridevi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22203,S.Uvashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22204,V.Nikedna Rakshekaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22205,Lakshmi Swaminathan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22206,Joshitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22207,P.Manasvi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22208,M.Kavya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22209,SV.Aarthi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22210,V.Shrinithi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22211,C.Adhulya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22212,V.Yogasri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22213,S.Naveena,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22214,V.Rajalakshmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22215,Mariam Hafsa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22216,Saloni jain,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22218,Niroshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22219,Krishnaveni,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22220,V.Seetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22221,MR.Unnamalai,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22222,Fathima Mehak,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22223,Versiliya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22224,R.Nirupa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22225,S.Anandhi,Rani Meyyammai Hostel,Student,Default,,,,GS,13:26,,07:04,04:26,00:00,Present  (No OutPunch),13:26:in(Att2) 20:30:out(SE) ,00:00
+10-04-2023,22226,Preethi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22227,S.Sai Aruna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22228,M.Mrinalika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22229,R Reshmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22230,S.Trisha Jothi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22231,A.Umayal Alamelu,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22232,G.Deva Dharshni,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22233,S.Lakshmi Mrinalini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22234,P.Supraja,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22236,M.Aditi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22237,22237,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22238,Anncy Presencia,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22239,Sanjana Rajbabu,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22240,GJ.Paraas Padmavathy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22241,CK.Dharshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22242,KA.Mirudhanya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22243,Sanjana Pandian,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22244,M.Bhavatarini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22245,M.Ritika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22246,22246,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22247,P.Joshitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22248,U.Aruna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22249,Priyanka,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22250,V.Arthi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22251,K.Mahalakshmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22252,S.Vimya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22253,V.Ramalakshmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22254,S.Sanjana,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22255,S.N ivetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22256,Vedika Halwasiya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22257,22257,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22258,P.Krishi Mirra,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22259,Shivani Nallusamy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22260,Shruthi Sathyamoorthy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22261,G.Rogini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22262,S.Mahalakshmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22263,S.Shwetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22264,KR.Pramatha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22266,K.Lavina,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22267,SB.Shivathmicka,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22268,SU.Nidarsana,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22269,I.Janani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22270,NR.Poorvaja,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22271,Ooviyaa Selvaraj,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22272,TG.Tejasverya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22274,M.Mirnalini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22275,Srinithi Sivakumar,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22276,R.Asmitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22277,Radhika Chandak,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22278,S.Harsini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22279,SS.Harshni,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22280,D.Nammetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22281,K.Thaila Valliammai,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22282,S.Vasunthara,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22283,G.Shivani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22284,Jeevitha Somasundaram,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22285,S.Raheema,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22286,Namratha Gogineni,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22287,X.Infant Sameetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22288,Jennifer Santhiya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22289,RP.Sai Sriyaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22290,K.Shreya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22291,MD.Janani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22292,Vaishnavi Murugan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22294,Raga Akshaya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22295,Thurumala Poojitha Reddy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22296,S.Elamathi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22297,P.Leina Dehsha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22298,V.Hithika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22299,S.Hanshika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22300,V.Lavanya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22301,Deepthi Bhaskar,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22302,Vishali Solayappan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22303,D.Deeparaksa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22304,S.Harshitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22305,V.Suvasini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22306,C.Deepica,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22307,Shafaq Siddiqui,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22308,Atchaya Gayathri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22309,22309,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22310,MV.Subhiksha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22311,SR.Thanyashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22312,M.Samyugtha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22314,A.Tejaswini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22315,S.Mohana Priya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22316,V.Rakshitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22317,P.Preththika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22318,Akshaya Ira,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22319,E.Kiruthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22320,D.Sharmilee,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22321,M.Leka Sri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22322,V.Dharshani,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22323,Brittnee Lopez,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22324,SJ.Patricia Sherin,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22327,T.Dhanapriya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22328,L.Neshaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22329,22329,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22330,W.Cathy Marion,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22331,R.Sahithya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22332,Sreelekha Danturti,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22333,SP.Madhunisa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22334,Rithani Kannan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22335,R.Architha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22336,S.Mirra Shruthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22338,Ss.Sharinee,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22339,Harshikha Shrini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22340,V.K.Samriddhi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22341,V.Sivasry,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22342,A.Joshnaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22343,S.Varsha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22344,Krithi kanuga,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22345,Athithi Kannan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22346,S.Sharnitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22347,Anusha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22348,VKA.Isha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22349,VS.Vishrutha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22350,KH.Sanya Sri,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22351,Harini Mohan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22352,S.Shanmitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22353,M.Thanvishree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22354,M.Sivani Sruthi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22355,R.Varsha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22356,DP.Lakshana,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22357,Jayavanthika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22358,Pramika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22359,T.Arunthamizh,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22360,yogasree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22361,Pon Mathini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22362,22362,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22363,Annie Sezlin,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22364,RJ.Akhil,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22365,SG.Pranetha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22366,Kaishikka Chennammal,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22367,S.Dhanalaksshmi Srivalli,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22368,S.Logeswari,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22369,Saro Jayamkondan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22370,Nehha Balasubramanian,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22371,P.Reshma,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22372,S.Ridhu Varshini,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22373,A.Hameeda,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22374,K.Divya Shruthi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22375,R.Rithanya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22376,S.Madhumita,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22377,M.Mithra,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22378,S.Sruthy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22379,SS.Barani Shree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22380,L.Komalapriya,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22381,Uma Poonguzhali,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22382,Anuja,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22383,A.Pooja,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22384,M.Rakshna,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22385,G.Vedhika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22386,D.Apsara,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22387,K.Pon Vaishnavi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22388,S.Kanishka,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22389,KA.Jayashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22390,Sree Nishaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22391,Lavanya lakshmi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22392,D.Prathika,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22393,P.Pirithisha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22394,V.Jayashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22395,Varsha Biju,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22396,Anaga Narayanan,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22397,Roushini.K,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22398,Neha Aravind,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22399,Jayashree,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22400,A.Vijaya Shrie,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22401,Lavanya Ramasamy,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22402,B.Amirthaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22403,P.Nikitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22404,Ritika Virgil,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22405,RR.Varshitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22407,Chandra Sahithi,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22409,R.Sonaa,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22410,B.Preethi Poornima,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22411,ES.Sameeksha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,22412,R.Virushmitha,Rani Meyyammai Hostel,Student,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,223000,223000,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
+10-04-2023,224000,224000,Default,Default,Default,,,,NS,,,00:00,00:00,00:00,Absent,,00:00
